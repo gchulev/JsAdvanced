@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 function validityChecker(x1, y1, x2, y2) {
 
