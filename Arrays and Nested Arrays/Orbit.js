@@ -1,6 +1,6 @@
 'use strict';
 
-function solve(input){
+function solve(input) {
     let rows = input[0];
     let cols = input[1];
     let starRow = input[2];
@@ -12,17 +12,20 @@ function solve(input){
         matrix[i] = [];
     }
 
-    for ( let r = 0; r < rows; r++){
+    for (let r = 0; r < rows; r++) {
         for (let c = 0; c < cols; c++) {
-            matrix[r][c] = Math.max(Math.abs(r - starRow) +1, Math.abs(c - starCol) + 1);            
+            matrix[r][c] = Math.max(Math.abs(r - starRow) + 1, Math.abs(c - starCol) + 1);
         }
     }
-    
+
     let result = '';
     for (let i = 0; i < matrix.length; i++) {
         result += matrix[i].join(' ') + '\n';
     }
-    console.log(result.trimEnd());
+
+
+    return result.trimEnd();
+    //console.log(result.trimEnd());
 }
 
 // solve([4, 4, 0, 0]);
