@@ -1,0 +1,37 @@
+document.body.innerHTML = `
+<main>
+  <table>
+    <thead>
+        <tr>
+            <th>First <input type="checkbox" name="first"></th>
+            <th>Second <input type="checkbox" name="second"></th>
+            <th>Third <input type="checkbox" name="third"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Word1</td>
+            <td>Word2</td>
+            <td>Word3</td>
+        </tr>
+        <tr>
+            <td>Word4</td>
+            <td>Word5</td>
+            <td>Word6</td>
+        </tr>
+        <tr>
+            <td>Word7</td>
+            <td>Word8</td>
+            <td>Word9</td>
+        </tr>
+    </tbody>
+</table>
+
+     <div>
+        <button onclick="generateReport()">Generate Report</button>
+     </div>
+     <div>
+        <textarea id="output"></textarea>
+     </div>
+</main>
+<script src="report.js"></script>
