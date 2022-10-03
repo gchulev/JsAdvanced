@@ -4,7 +4,6 @@ function solve(...params) {
     let result = {};
     let resultString = '';
     for (const pr of params) {
-        // console.log(`${typeof (pr)}: ${pr}`);
         resultString += `${typeof (pr)}: ${pr}\n`;
 
         if (!result.hasOwnProperty(typeof (pr))) {
@@ -15,7 +14,6 @@ function solve(...params) {
     }
 
     for (let [k, v] of Object.entries(result)) {
-        // console.log(`${k} = ${v}`);
         resultString += `${k} = ${v}\n`;
     }
 
