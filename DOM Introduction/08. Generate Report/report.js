@@ -1,16 +1,17 @@
 function generateReport() {
-    let table = document.getElementsByTagName('table')[0];
+    let tblRows = document.querySelectorAll('tbody tr');
+    let hdr = document.querySelectorAll('table thead tr th input');
     let rowsArray = [];
 
-    for (let rowIndex = 1; rowIndex < table.rows.length; rowIndex++) {
+    for (let rowIndex = 0; rowIndex < tblRows.length; rowIndex++) {
 
         let currentObj = {};
-        for (let colIndex = 0; colIndex < table.rows[0].children.length; colIndex++) {
-            let isChecked = table.rows[0].children[colIndex].children[0].checked;
+        for (let colIndex = 0; colIndex < hdr.length; colIndex++) {
+            let isChecked = hdr[colIndex].checked;
 
             if (isChecked) {
-                let currentCellData = table.rows[rowIndex].children[colIndex].innerText.trim();
-                let currentHeader = table.rows[0].children[colIndex].innerText.trim();
+                let currentCellData = tblRows[rowIndex].children[colIndex].textContent;
+                let currentHeader = hdr[colIndex].name;
                 currentObj[currentHeader] = currentCellData;
             }
         }
