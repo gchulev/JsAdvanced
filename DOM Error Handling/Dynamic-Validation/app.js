@@ -4,9 +4,6 @@ function validate() {
         let pattern = /^[a-z]+@[a-z]+\.[a-z]+$/;
         let emailToValidate = emailInputField.value;
 
-        let regex = RegExp(pattern);
-        let isMatch = regex.test(emailToValidate);
-
         if (emailToValidate.match(pattern)) {
             emailInputField.classList.remove('error');
         } else {
