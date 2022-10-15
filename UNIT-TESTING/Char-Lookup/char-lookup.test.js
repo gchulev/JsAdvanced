@@ -1,12 +1,12 @@
-let {expect} = require('chai');
-let {lookupChar} = require('./char-lookup');
+let { expect } = require('chai');
+let { lookupChar } = require('./char-lookup');
 
 
 describe('lookUpChar', () => {
     it('Should return undefined if the input type is not a string', () => {
         // Arrange
         let input = 20;
-        
+
         // Act
         let result = lookupChar(input, 1);
 
@@ -50,6 +50,6 @@ describe('lookUpChar', () => {
         let result = lookupChar(input, index);
 
         // Assert
-        expect(result).to.be.equal('s');        
+        expect(result).to.be.equal('s');
     });
 })
