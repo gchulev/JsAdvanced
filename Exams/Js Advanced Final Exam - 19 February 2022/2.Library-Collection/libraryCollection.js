@@ -80,10 +80,10 @@ class LibraryCollection {
     }
 }
 
-const library = new LibraryCollection(2)
-console.log(library.addBook('In Search of Lost Time', 'Marcel Proust'));
-console.log(library.addBook('Don Quixote', 'Miguel de Cervantes'));
-console.log(library.addBook('Ulysses', 'James Joyce'));
+// const library = new LibraryCollection(2)
+// console.log(library.addBook('In Search of Lost Time', 'Marcel Proust'));
+// console.log(library.addBook('Don Quixote', 'Miguel de Cervantes'));
+// console.log(library.addBook('Ulysses', 'James Joyce'));
 
 // const library = new LibraryCollection(2)
 // library.addBook('In Search of Lost Time', 'Marcel Proust');
