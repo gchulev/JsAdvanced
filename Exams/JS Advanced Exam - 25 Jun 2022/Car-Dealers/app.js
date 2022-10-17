@@ -22,11 +22,8 @@ function solve() {
 
   function submitInfo(e) {
     e.preventDefault();
-    let test = Number(sellingPrice.value) > Number(originalCost.value);
 
     if (make.value !== '' && model.value !== '' && year.value !== '' && fuelType.value !== '' && originalCost.value !== '' && sellingPrice.value !== '' && (Number(sellingPrice.value) > Number(originalCost.value))) {
-
-      
 
       let tr = document.createElement('tr');
 
