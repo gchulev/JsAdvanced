@@ -26,7 +26,7 @@ function solution() {
         }
 
         collectSalary() {
-            console.log(`${this.name} received ${this.salary} this month.`) // fix in Manager class
+            console.log(`${this.name} received ${this.salary} this month.`)
         }
     }
 
