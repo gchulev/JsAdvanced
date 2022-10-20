@@ -127,13 +127,13 @@ class ArtGallery {
 // console.log(artGallery.buyArticle('item', 'Mona Liza', 'John'));
 
 
-const artGallery = new ArtGallery('Curtis Mayfield'); 
-artGallery.addArticle('picture', 'Mona Liza', 3);
-artGallery.addArticle('Item', 'Ancient vase', 2);
-artGallery.addArticle('picture', 'Mona Liza', 1);
-artGallery.inviteGuest('John', 'Vip');
-artGallery.inviteGuest('Peter', 'Middle');
-artGallery.buyArticle('picture', 'Mona Liza', 'John');
-artGallery.buyArticle('item', 'Ancient vase', 'Peter');
-console.log(artGallery.showGalleryInfo('article'));
-console.log(artGallery.showGalleryInfo('guest'));
+// const artGallery = new ArtGallery('Curtis Mayfield'); 
+// artGallery.addArticle('picture', 'Mona Liza', 3);
+// artGallery.addArticle('Item', 'Ancient vase', 2);
+// artGallery.addArticle('picture', 'Mona Liza', 1);
+// artGallery.inviteGuest('John', 'Vip');
+// artGallery.inviteGuest('Peter', 'Middle');
+// artGallery.buyArticle('picture', 'Mona Liza', 'John');
+// artGallery.buyArticle('item', 'Ancient vase', 'Peter');
+// console.log(artGallery.showGalleryInfo('article'));
+// console.log(artGallery.showGalleryInfo('guest'));
