@@ -34,14 +34,17 @@ describe('cinema', () => {
             // Arrange
             let projectionType = 'Normal';
             let anotherProjectionType = 'Premiere';
+            let thirdProjectType = 'Discount';
 
             // Act
             let result = cinema.ticketPrice(projectionType);
             let secondResult = cinema.ticketPrice(anotherProjectionType);
+            let thirdResult = cinema.ticketPrice(thirdProjectType);
 
             // Assert
             expect(result).to.be.equal(7.50);
             expect(secondResult).to.be.equal(12.00);
+            expect(thirdProjectType).to.be.equal(5.50);
         });
 
         it('Should throw an error if the projection type is wrong', () => {

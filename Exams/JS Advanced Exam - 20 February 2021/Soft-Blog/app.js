@@ -29,7 +29,7 @@ function solve() {
       categoryStrong.textContent = category.value;
       creatorP.textContent = 'Creator:';
       creatorStrong.textContent = creator.value;
-      contentP.textContent = content.value;
+      contentP.textContent = content.textContent;
       deleteBtn.textContent = 'Delete';
       archiveBtn.textContent = 'Archive'
 
