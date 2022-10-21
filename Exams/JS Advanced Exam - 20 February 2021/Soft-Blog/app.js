@@ -8,9 +8,6 @@ function solve() {
 
    let archive = [];
 
-
-
-
    function createPost(e) {
       e.preventDefault();
 
